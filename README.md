@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# Modern 3D Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern 3D portfolio website for software developers to showcase their projects and skills. Built with React, Three.js, and Tailwind CSS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Modern UI/UX with 3D elements
+- Interactive 3D animations
+- Responsive design for all devices
+- Project showcase section
+- Skills and experience timeline
+- Contact form with "Hire Me" button
+- Dynamic starfield background
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React.js
+- Three.js
+- React Three Fiber & Drei
+- Framer Motion for animations
+- Tailwind CSS for styling
+- TypeScript for type safety
+- EmailJS for contact form
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v16+)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository
+```bash
+git clone https://github.com/Richierichman15/portfoolio.git
+cd portfoolio
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server
+```bash
+npm start
+```
 
-### `npm run eject`
+4. Open your browser and navigate to `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Customization
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Personal Information
+- Edit your name and job title in the `Hero.tsx` component
+- Update your about information in the `About.tsx` component
+- Add your experience in the `constants/index.ts` file
+- Add your projects in the `constants/index.ts` file
+- Update contact information in the `Contact.tsx` component
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Images and Assets
+- Replace logo and images in the `src/assets` folder
+- Add your project screenshots to the assets folder
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Colors and Styling
+- Modify color schemes in the `tailwind.config.js` file
+- Adjust animations in the `utils/motion.ts` file
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project can be easily deployed to platforms like Vercel, Netlify, or GitHub Pages.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
+
+## License
+
+MIT License
+
+## Acknowledgements
+- Three.js
+- React Three Fiber
+- Tailwind CSS
+- Framer Motion
