@@ -1,13 +1,20 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import * as THREE from "three";
+import { OrbitControls, Preload, Box } from "@react-three/drei";
+// We'll comment out THREE since we're not using it directly anymore
+// import * as THREE from "three";
 
-import CanvasLoader from "../Loader";
+// Create a simple loader component inline instead of importing
+const CanvasLoader = () => {
+  return (
+    <div className="flex justify-center items-center h-full">
+      <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-white" />
+    </div>
+  );
+};
 
 const Computers = ({ isMobile }: { isMobile: boolean }) => {
-  // In a real project, you would use a proper model here
-  // This is a simplified placeholder for the 3D model
+  // Using a simple Box geometry instead of loading a 3D model
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
@@ -20,12 +27,13 @@ const Computers = ({ isMobile }: { isMobile: boolean }) => {
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
-      <primitive
-        object={new THREE.BoxGeometry(5, 5, 5)} // Placeholder for actual 3D model
+      <Box
+        args={[3, 3, 3]}
         scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
+        position={isMobile ? [0, -1, -2.2] : [0, -1, -1.5]}
+      >
+        <meshStandardMaterial color="#915eff" />
+      </Box>
     </mesh>
   );
 };

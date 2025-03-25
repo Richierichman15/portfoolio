@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
+// We'll comment out emailjs for now since we're not using it yet
+// import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import SectionWrapper from "../utils/SectionWrapper";
