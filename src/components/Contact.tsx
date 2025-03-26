@@ -33,24 +33,12 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // FormSubmit.co handles the email delivery
-    fetch(EMAIL_SERVICE_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        name: form.name,
-        email: form.email,
-        message: form.message,
-        _subject: `Portfolio Contact from ${form.name}`,
-        _template: "table",
-        _captcha: "false"
-      }),
-    })
-      .then(response => {
-        console.log("Message sent successfully:", response);
+    // Let formsubmit.co handle the form submission directly
+    if (formRef.current) {
+      formRef.current.submit();
+      
+      // Show success message after a short delay
+      setTimeout(() => {
         setLoading(false);
         setFormSubmitted(true);
         
@@ -60,28 +48,18 @@ const Contact = () => {
           email: "",
           message: "",
         });
-      })
-      .catch(error => {
-        console.error("Error sending message:", error);
-        setLoading(false);
-        alert("Failed to send message. Please try again later.");
-      });
+      }, 1000);
+    }
   };
 
   return (
-    <div
-      className='xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden'
-    >
+    <div className='xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden'>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <div className="flex justify-between items-center">
-          <div>
-            <p className={styles.sectionSubText}>Get in touch</p>
-            <h3 className={styles.sectionHeadText}>Contact.</h3>
-          </div>
-        </div>
+        <p className={styles.sectionSubText}>Get in touch</p>
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         {formSubmitted ? (
           <div className="mt-12 p-8 bg-tertiary rounded-lg text-center">
@@ -145,6 +123,7 @@ const Contact = () => {
             <input type="hidden" name="_subject" value={`Portfolio Contact from ${form.name}`} />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value={window.location.href} />
 
             <button
               type='submit'
@@ -153,10 +132,6 @@ const Contact = () => {
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
-            
-            <p className="text-gray-400 text-sm">
-              Messages will be sent directly to my email inbox.
-            </p>
           </form>
         )}
       </motion.div>
