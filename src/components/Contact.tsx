@@ -33,16 +33,11 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // Let formsubmit.co handle the form submission directly
     if (formRef.current) {
       formRef.current.submit();
-      
-      // Show success message after a short delay
       setTimeout(() => {
         setLoading(false);
         setFormSubmitted(true);
-        
-        // Reset form
         setForm({
           name: "",
           email: "",
@@ -119,7 +114,6 @@ const Contact = () => {
               />
             </label>
             
-            {/* Hidden fields for FormSubmit.co */}
             <input type="hidden" name="_subject" value={`Portfolio Contact from ${form.name}`} />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
