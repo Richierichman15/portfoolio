@@ -27,8 +27,12 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "tech",
+    title: "Skills",
+  },
+  {
     id: "work",
-    title: "Experience",
+    title: "Roles",
   },
   {
     id: "projects",
@@ -158,6 +162,48 @@ const experiences = [
 
 const projects = [
   {
+    name: "Car Detailing Website",
+    description:
+      "Designed and developed a modern website for a local car detailing business using Next.js and TypeScript. Implemented responsive design with Tailwind CSS for optimal viewing across all devices. Created an intuitive interface for customers to explore services and book appointments.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project2,
+    source_code_link: "https://github.com/Richierichman15/cd-web",
+  },
+  {
+    name: "Content Management System",
+    description:
+      "Developed a full-stack Content Management System (CMS) with AI-powered media analysis. Implemented content creation, scheduling, and versioning for seamless workflow management. Integrated automated image analysis using AI to generate metadata and optimize assets.",
+    tags: [
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project1,
+    source_code_link: "https://github.com/Richierichman15/content-management",
+  },
+  {
     name: "E-Commerce Platform",
     description:
       "Designed and executed test plans for a full-stack e-commerce application. Implemented end-to-end testing using TypeScript and Selenium.",
@@ -175,8 +221,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: project1,
-    source_code_link: "https://github.com/",
+    image: project3,
+    source_code_link: "https://github.com/Debug-Thugs-2211/Dream-cars",
   },
   {
     name: "Automated Testing Framework for Job Finder Application",
@@ -197,7 +243,7 @@ const projects = [
       },
     ],
     image: project2,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Richierichman15/bot-job",
   },
   {
     name: "AI Assistant (Jarvis)",
@@ -217,8 +263,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: project3,
-    source_code_link: "https://github.com/",
+    image: project1,
+    source_code_link: "https://github.com/Richierichman15/jarvis",
   },
 ];
 

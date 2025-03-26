@@ -16,12 +16,6 @@ const ServiceCard = ({ index, title, icon }: { index: number, title: string, ico
       <div
         className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
-        <img
-          src={icon}
-          alt="web-development"
-          className="w-16 h-16 object-contain"
-        />
-
         <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
