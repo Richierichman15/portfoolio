@@ -28,7 +28,7 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
   },
   {
     id: "projects",
@@ -42,19 +42,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Software Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "FullStack Developer",
+    icon: reactjs,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "QA Engineer",
+    icon: javascript,
   },
   {
-    title: "Content Creator",
+    title: "DevOps Enginner",
     icon: creator,
   },
 ];
@@ -116,51 +116,51 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Company One",
+    title: "Software Developer",
+    company_name: "Outlier AI",
     icon: mobile,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Nov 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining web applications using React, JavaScript, and other modern technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers.",
+      "Implemented comprehensive test automation frameworks using TypeScript to ensure code quality and reliability",
+      "Participating in code reviews and contributing to best coding practices.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Company Two",
+    title: "Apprentice Developer",
+    company_name: "Software District",
     icon: web,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "June 2023 - Nov 2024",
     points: [
-      "Building responsive and interactive user interfaces with React, TypeScript, and Tailwind CSS.",
-      "Implementing RESTful APIs and optimizing application performance.",
-      "Working in an agile development environment with daily standups and sprint planning.",
-      "Creating and maintaining documentation for development processes and system architecture.",
+      "Trained in modern web development techniques and best practices.",
+      "Worked on real-world projects using JavaScript, React, and Node.js.",
+      "Developed skills in responsive UI development and API integration.",
+      "Collaborated with senior developers to learn software architecture and design patterns.",
     ],
   },
   {
-    title: "Full Stack Developer",
-    company_name: "Company Three",
+    title: "Education",
+    company_name: "Fullstack Academy",
     icon: backend,
     iconBg: "#383E56",
-    date: "Jan 2022 - Present",
+    date: "Completed 2023",
     points: [
-      "Developing full-stack applications with modern JavaScript frameworks and Node.js backends.",
-      "Implementing CI/CD pipelines and automated testing to ensure code quality and reliability.",
-      "Leading development teams and mentoring junior developers.",
-      "Architecting scalable and maintainable software solutions for complex business problems.",
+      "Studied core computer science principles, data structures, and algorithms.",
+      "Focused on web development technologies and software engineering practices.",
+      "Worked on collaborative team projects to build real-world applications.",
+      "Developed strong problem-solving and analytical skills through coursework.",
     ],
   },
 ];
 
 const projects = [
   {
-    name: "Project One",
+    name: "E-Commerce Platform",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Designed and executed test plans for a full-stack e-commerce application. Implemented end-to-end testing using TypeScript and Selenium.",
     tags: [
       {
         name: "react",
@@ -171,7 +171,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "node.js",
         color: "pink-text-gradient",
       },
     ],
@@ -179,20 +179,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Project Two",
+    name: "Automated Testing Framework for Job Finder Application",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed a comprehensive test automation framework using Python and TypeScript. Implemented API testing for RESTful endpoints. Integrated testtests with CI/CD pipeline for continuous quality assurance",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
@@ -200,16 +200,16 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Project Three",
+    name: "AI Assistant (Jarvis)",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed test cases to validate AI response accuracy and performance. Imlemented automated regression testing to ensure consistent functionality.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "api",
         color: "green-text-gradient",
       },
       {

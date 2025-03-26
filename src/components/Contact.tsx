@@ -78,7 +78,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -89,7 +89,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              placeholder='What you want to discuss?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -98,7 +98,7 @@ const Contact = () => {
             type='submit'
             className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:via-purple-500 hover:to-indigo-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary transition-all duration-300 hover:scale-105'
           >
-            {loading ? "Sending..." : "Hire Me"}
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </motion.div>
@@ -114,8 +114,10 @@ const Contact = () => {
               I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
             </p>
             <div className="space-y-2">
-              <p className="text-white"><span className="font-bold">Email:</span> your.email@example.com</p>
-              <p className="text-white"><span className="font-bold">Location:</span> City, Country</p>
+              <p className="text-white"><span className="font-bold">Email:</span> gitonga.nyaga@example.com</p>
+              <p className="text-white"><span className="font-bold">LinkedIn:</span> linkedin.com/in/gitonganyaga</p>
+              <p className="text-white"><span className="font-bold">Location:</span> Oklahoma City, OK</p>
+              <p className="text-white"><span className="font-bold">Phone:</span> (405) 922-2239</p>
             </div>
           </div>
         </div>
